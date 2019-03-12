@@ -8,6 +8,7 @@ const mainData = (props) => {
 
     <div>
         <p>{props.place}</p>
+        <p>{props.description}</p>
         <p>{props.temp} °F</p>
     </div>
 
