@@ -8,7 +8,8 @@ const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 class Weather extends Component {
 
   state = {
-    main: {}
+    main: {},
+    dayOfWeek: null;
   }
 
 
@@ -18,6 +19,10 @@ class Weather extends Component {
       this.setState({main: response.data.main })
       console.log(response.data);
     })
+  }
+
+  dayOfWeekHandler(){
+  
   }
 
 
