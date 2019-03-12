@@ -22,8 +22,12 @@ class Weather extends Component {
 
 
   render(){
-    console.log(this.state.data);
-    return <p className={styles.Container}>{this.state.main.temp}</p>
+
+    return(
+      <div className={styles.Container}>
+        <h1>Weather</h1>
+      </div>
+    )
   }
 
 }
