@@ -8,8 +8,10 @@ const mainData = (props) => {
 
     <div>
         <p>{props.place}</p>
-        <p>{props.temp}</p>
+        <p>{props.temp} °F</p>
     </div>
 
   )
 }
+
+export default mainData;
