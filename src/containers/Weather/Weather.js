@@ -33,7 +33,10 @@ class Weather extends Component {
     const icon = this.state.weather.map(data=> {
       let icon = "http://openweathermap.org/img/w/" + data.icon + ".png";
       return (
-         <img src={icon} alt="weather" key={data.id}/>
+          <div className={styles.Desc} key={data.id}>
+          <img src={icon} alt="weather"/>
+          <p>{data.main}</p>
+         </div>
       )
     })
 
