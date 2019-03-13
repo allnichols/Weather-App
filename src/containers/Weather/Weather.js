@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import styles from './Weather.module.css';
 import MainData from '../../components/MainData/MainData';
+import Date from '../../components/Date/Date';
 
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
@@ -11,8 +12,7 @@ class Weather extends Component {
   state = {
     location: '',
     weather: [],
-    mainWeather: {},
-    dayOfWeek: null
+    mainWeather: {}
   }
 
 
@@ -24,30 +24,23 @@ class Weather extends Component {
         location: response.data.name,
         weather: response.data.weather
        })
-      console.log(response.data.weather);
+      console.log(response.data);
     })
-  }
-
-  dayOfWeekHandler(){
-  //add array and .getDay();
   }
 
 
   render(){
-    const description = this.state.weather.map(data=> {
+    const icon = this.state.weather.map(data=> {
       let icon = "http://openweathermap.org/img/w/" + data.icon + ".png";
       return (
-        <div key={data.id}>
-         <p>{data.main}</p>
-         <img src={icon} alt="weather"/> 
-        </div>
+         <img src={icon} alt="weather" key={data.id}/>
       )
     })
 
     return(
       <div className={styles.Container}>
-        <h1>Weather</h1>
-        {description}
+        <Date />
+        {icon}
           <MainData
           place={this.state.location}
           temp={this.state.mainWeather.temp}

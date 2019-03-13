@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './MainData.module.css';
 
 
 const mainData = (props) => {
@@ -6,9 +7,8 @@ const mainData = (props) => {
 
   return(
 
-    <div>
+    <div className={styles.MainCard}>
         <p>{props.place}</p>
-        <p>{props.description}</p>
         <p>{props.temp} °F</p>
     </div>
 
