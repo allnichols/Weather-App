@@ -16,7 +16,7 @@ class Weather extends Component {
 
 
   componentDidMount(){
-    axios.get('https://api.apixu.com/v1/forecast.json?key=9209a9e6004847198f2183309191303&q=Houston&days=7')
+    axios.get('https://api.apixu.com/v1/forecast.json?key=' + API_KEY + '&q=Houston&days=7')
     .then(response => {
       this.setState({
         currentWeather: response.data.current,
