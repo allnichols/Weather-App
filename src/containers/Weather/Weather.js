@@ -11,42 +11,39 @@ class Weather extends Component {
 
   state = {
     location: '',
-    weather: [],
-    mainWeather: {}
+    current: {}
   }
 
 
   componentDidMount(){
-    axios.get('http://api.openweathermap.org/data/2.5/weather?q=Houston,Texas&units=imperial&appid=' + API_KEY)
+    axios.get('https://api.apixu.com/v1/forecast.json?key=9209a9e6004847198f2183309191303&q=Houston&days=7')
     .then(response => {
       this.setState({
-        mainWeather: response.data.main,
-        location: response.data.name,
-        weather: response.data.weather
+        currentWeather: response.data.current,
+
        })
-      console.log(response.data);
+      console.log(response.data.current);
     })
   }
 
 
   render(){
-    const icon = this.state.weather.map(data=> {
-      let icon = "http://openweathermap.org/img/w/" + data.icon + ".png";
-      return (
-          <div className={styles.Desc} key={data.id}>
-          <img src={icon} alt="weather"/>
-          <p>{data.main}</p>
-         </div>
-      )
-    })
+    // const icon = this.state.weather.map(data=> {
+    //   let icon = "http://openweathermap.org/img/w/" + data.icon + ".png";
+    //   return (
+    //       <div className={styles.Desc} key={data.id}>
+    //       <img src={icon} alt="weather"/>
+    //       <p>{data.main}</p>
+    //      </div>
+    //   )
+    // })
 
     return(
       <div className={styles.Container}>
         <Date />
-        {icon}
+
           <MainData
-          place={this.state.location}
-          temp={this.state.mainWeather.temp}
+
           />
       </div>
     )
