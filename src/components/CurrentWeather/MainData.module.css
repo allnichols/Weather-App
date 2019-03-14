@@ -1,5 +1,41 @@
 .MainCard{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   border: 1px solid black;
+}
+
+.LocationTemp{
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.LocationTemp p{
+  margin: 2px;
+  text-align: left;
+}
+
+.LocationTemp p:nth-of-type(1){
+  font-size: 22px;
+  font-weight:600;
+}
+
+.Temp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Temp img{
+  width: 110px;
+}
+
+.Temp h1{
+  font-size: 50px;
+  margin-left: 15px;
+}
+
+.Temp span{
+  font-weight: lighter;
+  font-size: 18px;
 }
