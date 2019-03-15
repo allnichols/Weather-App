@@ -1,7 +1,18 @@
 .ContainerCurrent{
   width: 90%;
   margin: 30px auto;
+  background: white;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+@media (min-width:765px ) {
+  .ContainerCurrent{
+    max-width: 600px;
+  }
+}
+
+/* .Desc{
+  border: 1px solid black;
+} */
