@@ -22,12 +22,10 @@ class Weather extends Component {
       this.setState({
         currentWeather: response.data.current,
         location: response.data.location,
-        condition: response.data.current.condition
+        condition: response.data.current.condition,
+        forecast: response.data.forecast
        })
-      console.log(response.data);
-      console.log(response.data.current);
-      console.log(response.data.current.condition);
-      console.log(response.data.location);
+      console.log(response.data.forecast)
     })
   }
 
@@ -49,6 +47,8 @@ class Weather extends Component {
          humidity={this.state.currentWeather.humidity}
          wind={this.state.currentWeather.wind_mph}
         />
+
+
 
 
       </div>

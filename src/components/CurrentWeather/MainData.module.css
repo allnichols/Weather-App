@@ -27,13 +27,13 @@
 }
 
 .Temp img{
-  width: 110px;
+  /* width: 110px; */
   margin-left: 10px;
 }
 
 .Temp h1{
   font-size: 50px;
-  /* margin-left: 15px; */
+  font-weight: lighter;
 }
 
 .Temp span{
