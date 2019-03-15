@@ -1,11 +1,7 @@
 .ContainerCurrent{
-  color: black;
-  background: white;
   width: 90%;
   margin: 30px auto;
   border-radius: 5px;
-}
-
-.Desc{
-  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

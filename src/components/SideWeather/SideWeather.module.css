@@ -1,0 +1,20 @@
+.List{
+  border: 1px solid black;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.List ul{
+    list-style: none;
+    text-align: left;
+}
+
+.List ul li{
+  padding: 13px 0;
+  font-size: 20px;
+  /* font-family: sans-serif; */
+}
+
+.List li span{
+  font-weight: lighter;
+}
