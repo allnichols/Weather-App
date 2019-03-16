@@ -7,6 +7,12 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.ContainerForecast{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+}
+
+
 @media (min-width:765px ) {
   .ContainerCurrent{
     max-width: 600px;
