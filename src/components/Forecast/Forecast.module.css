@@ -1,3 +1,14 @@
 .Forecast{
   border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Forecast  p{
+  padding-left: 5px;
+}
+
+.Forecast p:last-of-type{
+  color: #878787;
 }

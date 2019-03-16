@@ -1,20 +1,25 @@
 .ContainerCurrent{
   width: 90%;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   background: white;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .ContainerForecast{
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0px 0px 5px 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11px, 1fr));
 }
 
 
 @media (min-width:765px ) {
-  .ContainerCurrent{
+  .ContainerCurrent,
+  .ContainerForecast{
     max-width: 600px;
   }
 }

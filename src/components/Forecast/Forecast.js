@@ -7,8 +7,8 @@ const forecast = (props) => {
   return(
 
     <div className={styles.Forecast}>
-      <p>{props.high}</p>
-      <p>{props.low}</p>
+      <p>{ Math.round( props.high)}°</p>
+      <p>{ Math.round( props.low )}°</p>
     </div>
 
   )
