@@ -1,0 +1,51 @@
+.MainCard{
+
+}
+
+.LocationTemp{
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.LocationTemp p{
+  margin: 2px;
+  color: #878787;
+}
+
+.LocationTemp p:nth-of-type(1){
+  font-size: 28px;
+  font-weight: lighter;
+  font-family: 'Roboto', arial;
+}
+.LocationTemp p:nth-of-type(2){
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Roboto', arial;
+}
+
+.Temp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Temp img{
+  /* width: 110px; */
+  margin-left: 10px;
+}
+
+.Temp h1{
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.Temp span{
+  font-weight: lighter;
+  font-size: 18px;
+  vertical-align: top;
+}

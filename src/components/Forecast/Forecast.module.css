@@ -1,0 +1,26 @@
+.Forecast{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.Forecast img{
+  display:block;
+  padding-left: 1.4px;
+  width: 80px;
+}
+
+
+
+.Forecast p{
+  padding-left: 5px;
+  margin: 0 2px;
+}
+
+.Forecast p:last-of-type{
+  color: #878787;
+}
