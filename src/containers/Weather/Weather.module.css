@@ -4,8 +4,6 @@
   background: white;
   border-radius: 5px 5px 0 0;
   padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .ContainerForecast{
