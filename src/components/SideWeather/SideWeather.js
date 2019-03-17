@@ -7,11 +7,14 @@ const sideWeather = (props) => {
       <ul>
         <li>Precipitation: <span>{props.precipitation}</span></li>
         <li>Humidity: <span>{props.humidity}%</span></li>
-        <li>Wind: <span>{props.wind} mph</span></li>
+        <li>Wind: <span>{props.wind}mph</span></li>
       </ul>
-      <button>Sun</button>
-      <button>Precipitation</button>
-      <button>Wind</button>
+      <ul>
+        <li>Precipitation: <span>{props.precipitation}</span></li>
+        <li>Humidity: <span>{props.humidity}%</span></li>
+        <li>Wind: <span>{props.wind}mph</span></li>
+      </ul>
+
     </div>
   )
 }
