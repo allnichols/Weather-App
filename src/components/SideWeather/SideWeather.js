@@ -9,12 +9,6 @@ const sideWeather = (props) => {
         <li>Humidity: <span>{props.humidity}%</span></li>
         <li>Wind: <span>{props.wind}mph</span></li>
       </ul>
-      <ul>
-        <li>Precipitation: <span>{props.precipitation}</span></li>
-        <li>Humidity: <span>{props.humidity}%</span></li>
-        <li>Wind: <span>{props.wind}mph</span></li>
-      </ul>
-
     </div>
   )
 }

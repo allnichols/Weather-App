@@ -1,5 +1,4 @@
 .Forecast{
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,10 +7,10 @@
   cursor: pointer;
 }
 
+
 .Forecast img{
   display:block;
   padding-left: 1.4px;
-  /* flex-grow: 2; */
   width: 80px;
 }
 
@@ -19,7 +18,7 @@
 
 .Forecast p{
   padding-left: 5px;
-  margin: 0 5px;
+  margin: 0 2px;
 }
 
 .Forecast p:last-of-type{

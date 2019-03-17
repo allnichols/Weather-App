@@ -48,6 +48,7 @@ class Weather extends Component {
 
     return(
       <Auxillary>
+      
         <div className={styles.ContainerCurrent}>
           <CurrentWeather
             city={this.state.location.name}
