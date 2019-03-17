@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './MainData.module.css';
-import Date from '../../components/Date/Date';
+
 
 
 const currentWeather = (props) => {
-
 
   return(
 
@@ -12,7 +11,7 @@ const currentWeather = (props) => {
 
       <div className={styles.LocationTemp}>
           <p>{props.city}, {props.state}</p>
-          <Date/>
+
           <p>{props.description}</p>
         <div className={styles.Temp}>
           <img src={props.icon} alt="icon"/>

@@ -8,10 +8,9 @@ const forecast = (props) => {
   const dayOfWeek = props.date;
   const printDay = new Date(dayOfWeek).toLocaleDateString('en-us', options);
 
-  console.log(printDay);
   return(
 
-    <div className={styles.Forecast}>
+    <div className={styles.Forecast} onClick={props.clicked}>
       <p>{printDay}</p>
       <img src={props.icon} alt="icon"/>
       <p>{ Math.round( props.high)}°</p>

@@ -32,9 +32,26 @@ class Weather extends Component {
     })
   }
 
+  forecastClickedHandler = ( obj1, obj2 ) =>{
+
+    this.setState({
+      currentWeather: obj1,
+      condition: obj2
+    });
+      console.log('clicked');
+  }
+
 
   render(){
     let forecast = this.state.forecast.map(day => {
+        let weatherNumbers = {
+          temp_f: day.day.avgtemp_f,
+          precip_in: day.day.totalprecip_in,
+          humidity: day.day.avghumidity,
+          wind_mph: day.day.maxwind_mph}
+
+        let newCondition = { icon: day.day.condition.icon, text:day.day.condition.text  }
+
       return(
         <Forecast
         key={day.date_epoch}
@@ -42,13 +59,14 @@ class Weather extends Component {
         icon={day.day.condition.icon}
         low={day.day.mintemp_f}
         high={day.day.maxtemp_f}
+        clicked={()=> this.forecastClickedHandler(weatherNumbers, newCondition) }
       />
     )
     });
 
     return(
       <Auxillary>
-      
+
         <div className={styles.ContainerCurrent}>
           <CurrentWeather
             city={this.state.location.name}
