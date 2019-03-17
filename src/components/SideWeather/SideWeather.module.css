@@ -25,7 +25,8 @@
   width: 90px;
   border: 1px solid #878787;
   padding: 4.5px;
-  font-size: 12px;;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 @media (min-width:555px) {
