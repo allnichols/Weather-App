@@ -38,6 +38,8 @@ class Weather extends Component {
       return(
         <Forecast
         key={day.date_epoch}
+        date={day.date}
+        icon={day.day.condition.icon}
         low={day.day.mintemp_f}
         high={day.day.maxtemp_f}
       />

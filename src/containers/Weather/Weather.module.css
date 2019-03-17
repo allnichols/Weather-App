@@ -13,7 +13,7 @@
   background: white;
   border-radius: 0px 0px 5px 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 

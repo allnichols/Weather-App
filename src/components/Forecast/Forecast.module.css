@@ -1,12 +1,24 @@
 .Forecast{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.Forecast  p{
+.Forecast img{
+  display:block;
+  padding-left: 1.4px;
+  /* flex-grow: 2; */
+  width: 80px;
+}
+
+
+
+.Forecast p{
   padding-left: 5px;
+  margin: 0 5px;
 }
 
 .Forecast p:last-of-type{
