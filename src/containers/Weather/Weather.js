@@ -20,7 +20,7 @@ class Weather extends Component {
 
 
   componentDidMount(){
-    axios.get('https://api.apixu.com/v1/forecast.json?key=' + API_KEY + '&q=Houston&days=8')
+    axios.get('https://api.apixu.com/v1/forecast.json?key=' + API_KEY + '&q=Houston&days=7')
     .then(response => {
       this.setState({
         currentWeather: response.data.current,
@@ -28,7 +28,7 @@ class Weather extends Component {
         condition: response.data.current.condition,
         forecast: response.data.forecast.forecastday
        })
-      console.log(response.data.forecast.forecastday)
+      console.log(response.data)
     })
   }
 
